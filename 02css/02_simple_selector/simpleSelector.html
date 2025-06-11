@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: cursive;
+        }
+
+        #box1{
+            background-color: yellow;
+        }
+        .container{
+            background-color: blue;
+        }
+        .content{
+            color: red;
+        }
+        div{
+            background-color: brown;
+        }
+        main,#navbar,.sidebar{
+            background-color: lightgoldenrodyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Selector</h1>
+    <!-- 
+        1) id : if we want to target unique element (denoted by #)
+        2) class : if we want to target multiple similar or different element (denoted by .)
+        3) element : if we want to taget multiple similar element (denoted by tag name)
+        4) group : if we want to group different element and apply same styles (denoted y ,)
+        5) univesal : if we want to target all the elements present in html (denoted by *)
+     -->
+
+     <!-- id  -->
+     <div id="box1">I am Div</div>
+     
+     <!-- class -->
+     <section class="container">Target using class</section>
+     <footer class="container content">Target using class</footer>
+     <header class="container">Target using class</header>
+
+     <!-- element -->
+     <div>Div 1</div>
+     <div>Div 2</div>
+     <div>Div 2</div>
+
+     <!-- group -->
+     <main>i am main</main>
+     <nav id="navbar">i am nav</nav>
+     <aside class="sidebar">i am aside</aside>
+
+     <!-- Universal -->
+
+</html>

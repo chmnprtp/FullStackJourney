@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div[name] {
+        background-color: yellow;
+      }
+      div[name="box2"] {
+        background-color: aqua;
+      }
+      div[name~="wrapper"] {
+        background-color: red;
+      }
+      div[name|="box"] {
+        background-color: pink;
+      }
+      div[name^="qwer"] {
+        background-color: blueviolet;
+      }
+      div[name$="t"] {
+        background-color: blue;
+      }
+      div[name*="amd"] {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Learn Attribute selector</h1>
+
+    <div name="box1">Lorem ipsum dolor sit.</div>
+    <div name="box2">Lorem ipsum dolor sit.</div>
+    <div name="content wrapper">Lorem, ipsum.</div>
+    <div name="box-container">Lorem.</div>
+    <div name="qwerty">Lorem, ipsum dolor.</div>
+    <div name="qrst">lorem.</div>
+    <div name="iamdiv">Lorem, ipsum.</div>
+  </body>
+</html>

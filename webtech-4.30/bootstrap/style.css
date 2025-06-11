@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  height: 70px;
+}
+nav li:hover {
+  background-color: rgba(245, 245, 245, 0.073);
+}
+#carousal-container img {
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 427px) {
+  #carousal-container img {
+    height: 350px;
+  }
+}
+
+#card-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+#card {
+  height: auto;
+  padding: 10px;
+  max-width: 350px;
+  cursor: pointer;
+}
+#card > img {
+  object-fit: contain;
+  max-height: 200px;
+}
+#card:hover {
+  transform: scale(1.02) translateY(-10px);
+  transition: 0.2s;
+  border: 0.8px solid gainsboro;
+}
+@media (max-width: 800px) {
+  #card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 426px) {
+  #card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

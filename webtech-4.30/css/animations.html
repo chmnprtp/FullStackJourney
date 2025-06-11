@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 300px;
+        width: 300px;
+        background-color: royalblue;
+        position: absolute;
+        animation-name: boxmove;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 2s;
+      }
+
+      @keyframes boxmove {
+        from {
+          top: 0;
+          left: 0;
+          background-color: yellow;
+        }
+
+        to {
+          top: 0;
+          left: calc(100% - 300px);
+          background-color: orangered;
+          border-radius: 50%;
+        }
+      }
+
+      .loader {
+        height: 300px;
+        width: 300px;
+        border: 30px solid gainsboro;
+        border-top: 30px solid black;
+        margin: 150px auto 0;
+        border-radius: 50%;
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .box2 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid black;
+        position: absolute;
+        animation-name: move2;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-delay: 2s;
+      }
+
+      @keyframes move2 {
+        0% {
+          top: 0;
+          left: 0;
+          background-color: aqua;
+        }
+        25% {
+          top: 0;
+          left: 500px;
+          background-color: blue;
+        }
+        50% {
+          top: 400px;
+          left: 500px;
+          background-color: blueviolet;
+        }
+        75% {
+          top: 400px;
+          left: 0;
+          background-color: lightblue;
+        }
+        100% {
+          top: 0;
+          left: 0;
+          background-color: aqua;
+        }
+      }
+
+      .imgs {
+        height: 80vh;
+        width: 80vw;
+        border: 2px solid black;
+        margin: 20px auto;
+        animation-name: imagesanime;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        background-position: center;
+        background-size: cover;
+      }
+
+      @keyframes imagesanime {
+        0% {
+          background-image: url("https://i0.wp.com/www.kridha.net/wp-content/uploads/2021/01/Landscape-Vector-Illustration-Background.jpg?fit=960%2C540&ssl=1");
+        }
+        25% {
+          background-image: url("https://cdn.pixabay.com/photo/2020/01/13/21/31/illustration-4763593_1280.jpg");
+        }
+        50% {
+          background-image: url("https://static.vecteezy.com/system/resources/thumbnails/017/214/886/small_2x/spring-green-fields-landscape-with-mountain-blue-sky-and-clouds-background-panorama-peaceful-rural-nature-in-springtime-with-green-grass-land-cartoon-illustration-for-spring-and-summer-banner-vector.jpg");
+        }
+        75% {
+          background-image: url("https://img.freepik.com/free-vector/blank-landscape-scene-nature-park-sunset-time_1308-61312.jpg");
+        }
+        100% {
+          background-image: url("https://img.freepik.com/premium-photo/3d-cartoon-empty-background-kids_1009902-10626.jpg");
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box1"></div> -->
+
+    <!-- <div class="loader"></div> -->
+
+    <!-- <div class="box2"></div> -->
+
+    <section class="imgs"></section>
+  </body>
+</html>

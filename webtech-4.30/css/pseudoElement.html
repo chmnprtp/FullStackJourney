@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-letter {
+        color: red;
+        font-size: 50px;
+      }
+      p::first-line {
+        color: blue;
+      }
+      p::selection {
+        background-color: aqua;
+        color: black;
+      }
+      h1::before{
+        content: "😎";
+        font-size: 50px;
+      }
+      h1::after{
+        content: "🫡";
+        font-size: 80px;
+      }
+      ::marker{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-element selectors ::</h1>
+
+    ::first-letter ::first-line ::selection ::after ::before ::marker
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus porro
+      illum error dignissimos aut officiis vero doloremque reprehenderit
+      recusandae. Ad exercitationem culpa consequuntur assumenda accusantium? Ad
+      enim minima, eveniet labore dolores obcaecati deserunt tempore, corporis,
+      alias dolorem nesciunt quos consequuntur reprehenderit quod dignissimos.
+      Sed accusamus nam fugit ea ut reiciendis?
+    </p>
+
+    <h1>Hello World</h1>
+
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>REACT</li>
+    </ol>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>REACT</li>
+    </ul>
+  </body>
+</html>

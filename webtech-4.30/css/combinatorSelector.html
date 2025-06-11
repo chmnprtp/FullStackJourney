@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      section div {
+        background-color: red;
+      }
+
+      section>div{
+        background-color: yellow;
+      }
+      section+main{
+        background-color: aqua;
+      }
+      section~div{
+        background-color: blue;
+      }
+    </style>
+
+  </head>
+  <body>
+   
+    <div>div 1</div>
+    <section>
+      <div>div 2</div>
+      <div>div 3</div>
+      <article>
+        <div>div 4</div>
+        <div>div 5</div>
+      </article>
+      <div>div 6</div>
+    </section>
+    <main>main 1</main>
+    <div>div 7</div>
+    <div>div 8</div>
+  
+</body>
+</html>

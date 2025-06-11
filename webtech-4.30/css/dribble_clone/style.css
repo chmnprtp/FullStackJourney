@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  height: 90px;
+  width: 100%;
+  background-color: white;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+nav > img {
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 90px;
+  object-fit: contain;
+  margin-right: 40px;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+nav > .btn-container {
+  margin-left: auto;
+}
+nav > .btn-container > button:first-child {
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
+  border: none;
+}
+nav > .btn-container > button:last-child {
+  padding: 15px 25px;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+.hero-section {
+  height: 68vh;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hero-section > h1,
+p,
+.search-bar-container,
+.trending-search-container {
+  border: 2px solid black;
+}
+.search-bar-container {
+  height: 50px;
+  width: 60vw;
+}
+.trending-search-container {
+  height: 60px;
+  width: 70vw;
+}
+.hero-section > h1 {
+  font-size: 65px;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+.hero-section > p {
+  text-align: center;
+  padding: 5px 10px;
+  color: rgb(45, 45, 45);
+  font-size: 18px;
+}
+
+.card-container {
+  width: 100%;
+  border: 2px solid black;
+  min-height: 70vh;
+  /* background-color: aqua; */
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+.card {
+  height: 226px;
+  width: 302px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  background-image: url("https://cdn.dribbble.com/userupload/42835132/file/original-addc797a9bed8ef056db04a6376f13ad.png?format=webp&resize=1200x900&vertical=center");
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+.card > .overlay {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to top,
+    black,
+    rgba(0, 0, 0, 0.635),
+    transparent,
+    transparent
+  );
+  opacity: 0;
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  align-items: flex-end;
+}
+.card:hover > .overlay {
+  opacity: 1;
+}
+
+.overlay > p {
+  color: white;
+  margin-bottom: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.overlay > p > span {
+  padding: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay > p > span:first-child {
+  margin-left: 30px;
+}
+.overlay > p > span:last-child {
+  margin-left: 8px;
+}
+.card > figcaption {
+  margin-top: 10px;
+}
+

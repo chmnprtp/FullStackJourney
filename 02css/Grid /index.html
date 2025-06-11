@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 
+        CSS Grid is a two dimentional layout system
+        ____________________________________________________________
+        |                                                           |
+        |___________________________________________________________|
+        |          |                                |               |
+        |
+        |
+
+
+        Grid lines - Grid lines are horizontal and vertical lines that run through the entire CSS grid.
+        
+        Grid Tracks - The space between any two consecutive grid lines is called a grid track.
+
+        Grid Cells - Grid cells are the space betwwen any four intersecting grid lines
+                     its is the smallest unit in the CSS grid.
+        
+        Grid Areas - Grid areas are nothing but a collection of grid cells that form a rectangular area on the grid.
+                    Grid areas can be of 1 cell or multiple cells.
+        
+        Grid Colums - The space between any two adjacent vertical grid lines is known as grid column.
+
+        Grid Rows - The space between any two adjacent horizontal grid lines is known as grid row.
+        
+        Gutters - Gutter is the space between any two adjacent rows and columns
+
+       ? Properties
+        1. display ____
+            1) grid -- in rows
+            2) inline-grid - 
+            
+        2. grid-template-colums: ___________   __________  ________
+                            column1 size   column2 size   column3 size
+             
+                                repeat (3  ,  300px)
+                                        no of     size of column 
+                                        column
+
+                                grid-template-columns: 1fr 1fr           // 1fr = fractional unit
+                                                 total width of container
+
+        3. grid-template-rows: ___________   __________  ________
+                                row1 size    row2 size   row3 size
+
+                                repeat (3  ,  300px)
+                                        no of     size of rows 
+                                        rows
+
+                                grid-template-rows: 1fr 1fr  // 1fr = fractional unit
+
+                                _________   auto    _______
+
+                            1) min-content - children m jo bhi word max size hoga utna width hoga 
+                            2 max-content - saare content ko ek line m aane k lie kitna size chahie
+                            3)minmax(minValue, maxValue)
+                            4)repeat(minvalue,maxvalue)
+                            5)autofilt
+                            6)autofill
+
+                        gtc : min-contetn  min-content
+                        gtc : repeat(2,min-content)
+                        gtc: repeat(2,max-content)
+                        gtc: min-content, 1fr, max-content
+                        gtc: minmax(100px,300px) minmax(100px,300px)
+                        gtc: repeat(2,minmax(100px,300px))
+
+         4. gap: _____  ______
+                row      column
+        
+        5. justify-items: ______            // for row x axis for grid children
+            1) stretch(default) // if children has no width then it will stretch 
+            2) start
+            3) end
+            4) center
+
+        6. align-items:_____                  // for column y axis for grid children
+            1) stretch(default) //// if children has no height then it will stretch 
+            2) start
+            3) end
+            4) center
+        
+        7. place-items: ________  _________  // if align-item and justify-item is same
+                      align-item  justify-item
+        
+        8. justify-content: // for grid // for x axis
+            1) stretch
+            2) start
+            3) end
+            4) center
+            moves column below value:
+            5) space-between
+            6) space-around
+            7) space-between
+            8) space-even
+
+        9) align-content:
+            1) stretch
+            2) start
+            3) end
+            4) center
+            moves row below value:
+            5) space-between
+            6) space-around
+            7) space-between
+            8) space-even
+
+        10 place-content: ________  _________  // if align-content and justify-content is same
+                       align-item  justify-item
+        
+        11. grid-auto-columns:  // those new created automatically we can define size manually
+            1) auto
+
+        12 grid-auto-rows:
+
+        13 grid-auto-flows: 
+            1) row //default 
+            2) column
+
+        implicit grid - nature of the grid
+        explicit grid - when doing forcefully
+
+        14  grid-template-area:
+
+
+        # Grid itme properties:
+            1)grid-column-start:
+            2)grid-column-end:
+            3)grid-row-start:
+            4)grid-row-end:
+     -->
+    
+     <section id="container">
+        <div class="child c1" >Box1</div>
+        <div class="child c2">Box2</div>
+        <div class="child c3">Box3</div>
+        <div class="child c1" >Box4</div>
+        <div class="child c2">Box5</div>
+        <div class="child c3">Box6</div>
+        <div class="child c1" >Box1</div>
+        <div class="child c2">Box2</div>
+        <div class="child c3">Box3</div>
+        <div class="child c1" >Box4</div>
+        <div class="child c2">Box5</div>
+        <div class="child c3">Box6</div>
+     </section>
+
+</body>
+</html>

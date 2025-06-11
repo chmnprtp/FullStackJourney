@@ -1,0 +1,61 @@
+<!-- 1. Absolute Units
+
+These are fixed and don’t change based on screen size or other factors.
+
+| Unit | Meaning                  | Example          |
+| ---- | ------------------------ | ---------------- |
+| `px` | Pixels                   | `width: 100px`   |
+| `pt` | Points (1pt = 1/72 inch) | Mostly for print |
+| `in` | Inches                   | `width: 1in`     |
+| `cm` | Centimeters              | `height: 2cm`    |
+| `mm` | Millimeters              | `margin: 5mm`    |
+| `pc` | Picas (1pc = 12pt)       | `font-size: 1pc` |
+
+🟡 Use case: Pixel (px) is most common for web. Others are used in print or specific design needs.
+
+🔸 2. Relative Units
+
+These scale based on some other value like font size or parent dimensions.
+
+| Unit  | Relative To                                  | Example             |
+| ----- | -------------------------------------------- | ------------------- |
+| `%`   | Parent element                               | `width: 50%`        |
+| `em`  | Font size of the element                     | `padding: 2em`      |
+| `rem` | Font size of the root element (`html`)       | `font-size: 1.5rem` |
+| `ex`  | Height of the letter “x” in the current font | Rarely used         |
+| `ch`  | Width of the “0” character                   | `width: 40ch`       |
+
+🟡 Use case: em and rem are great for scalable typography and spacing.
+
+🔷 3. Viewport Units
+
+These depend on the size of the browser window.
+
+| Unit   | Meaning                   | Example            |
+| ------ | ------------------------- | ------------------ |
+| `vh`   | 1% of viewport **height** | `height: 100vh`    |
+| `vw`   | 1% of viewport **width**  | `width: 100vw`     |
+| `vmin` | Smaller of `vh` or `vw`   | `font-size: 5vmin` |
+| `vmax` | Larger of `vh` or `vw`    | `font-size: 5vmax` |
+
+
+🟡 Use case: Great for full-screen layouts, responsive design, and dynamic spacing.
+
+🔘 4. Time Units
+
+Used for animations and transitions.
+
+| Unit | Meaning      | Example                  |
+| ---- | ------------ | ------------------------ |
+| `s`  | Seconds      | `transition: 1s`         |
+| `ms` | Milliseconds | `animation-delay: 500ms` |
+
+
+Used in rotations, gradients, etc.
+
+| Unit   | Meaning               | Example                    |
+| ------ | --------------------- | -------------------------- |
+| `deg`  | Degrees (0–360°)      | `transform: rotate(45deg)` |
+| `rad`  | Radians               | `rotate(1.57rad)`          |
+| `grad` | Gradians              | `rotate(100grad)`          |
+| `turn` | Full turns (1 = 360°) | `rotate(0.5turn)`          |

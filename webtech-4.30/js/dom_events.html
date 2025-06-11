@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onload="pageload()">
+
+    <h1>DOM Events</h1>
+
+    <button onclick="singleclicked()">single click</button>
+
+    <button ondblclick="doubleclicked()">double click</button>
+
+    <button onmouseenter="cursorover()">cursor over me</button>
+
+    <button onmouseleave="cursorout()">cursor out</button>
+
+    <button onmousemove="cursormove()">cursor move</button>
+
+    <p
+    onscroll="parascroll()"
+    style="height: 100px; border: 1px solid black; overflow: scroll">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam distinctio
+      ipsa dicta nostrum omnis, eaque ea, natus odit error eveniet consequuntur
+      quae fugit, quis quo dolore maxime. Commodi natus dolorum, quibusdam
+      fugiat tempore labore, eos ab ea ullam deserunt quos vero eum eius. Neque
+      harum molestiae culpa placeat, quisquam id?
+    </p>
+
+
+    <input type="text" placeholder="Username" onkeydown="keypressed()" />
+    <br>
+    <input type="text" placeholder="Password" onkeyup="keyreleased()" />
+    <br>
+    <input type="text" placeholder="Email" onchange="keychange()" />
+
+    <hr>
+
+    <form onsubmit="handleForm(event)">
+        <input type="text" placeholder="First Name">
+        <br>
+        <input type="text" placeholder="Last Name">
+        <br>
+        <input type="submit">
+        <button >Submit 2</button>
+    </form>
+
+    <script src="./dom_events.js"></script>
+  </body>
+</html>

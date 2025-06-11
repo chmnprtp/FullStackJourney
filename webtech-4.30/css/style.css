@@ -1,0 +1,5 @@
+@import url("./newStyle.css");
+
+h1 {
+  background-color: blue !important;
+}

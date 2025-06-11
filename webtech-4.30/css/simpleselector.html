@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple-Selectors</title>
+    <style>
+      * {
+        font-family: cursive;
+      }
+      #box1 {
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+      }
+      .content {
+        background-color: lightgreen;
+      }
+      .text {
+        color: red;
+      }
+      li {
+        background-color: aqua;
+      }
+
+      #head,
+      .foot,
+      aside {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Simple Selectors</h1>
+
+    <div id="box1"></div>
+
+    <p class="content">Lorem ipsum dolor sit amet.</p>
+    <main class="content text">Lorem, ipsum.</main>
+    <pre class="content">Lorem ipsum dolor sit.</pre>
+
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+
+    <header id="head">header</header>
+    <footer class="foot">footer</footer>
+    <aside>aside</aside>
+  </body>
+</html>
